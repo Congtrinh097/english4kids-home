@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://english4kids.org/sitemap.xml
