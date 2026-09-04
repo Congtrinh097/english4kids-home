@@ -1,167 +1,23 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>English4Kids — Học tiếng Anh vui, dễ, hiệu quả cho trẻ em</title>
-<meta name="description" content="English4Kids giúp trẻ em học tiếng Anh dễ dàng qua hai ứng dụng: English Voca (học từ vựng bằng flashcard, quiz) và SpeakFlow (luyện nói tiếng Anh từng câu). Miễn phí, an toàn, dễ dùng.">
-<meta name="keywords" content="học tiếng anh cho trẻ em, english4kids, english voca, speakflow, học từ vựng tiếng anh, luyện nói tiếng anh">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://english4kids.org/">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="English4Kids">
-<meta property="og:title" content="English4Kids — Học tiếng Anh vui, dễ, hiệu quả cho trẻ em">
-<meta property="og:description" content="Hai ứng dụng học tiếng Anh cho trẻ em: English Voca (từ vựng) và SpeakFlow (luyện nói). Miễn phí và dễ sử dụng.">
-<meta property="og:url" content="https://english4kids.org/">
-<meta property="og:locale" content="vi_VN">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="English4Kids — Học tiếng Anh vui, dễ, hiệu quả cho trẻ em">
-<meta name="twitter:description" content="Hai ứng dụng học tiếng Anh cho trẻ em: English Voca (từ vựng) và SpeakFlow (luyện nói).">
-
-<!-- Structured data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "English4Kids",
-  "url": "https://english4kids.org/",
-  "logo": "https://english4kids.org/favicon.png",
-  "sameAs": [
-    "https://voca.english4kids.org/",
-    "https://speak.english4kids.org/"
-  ]
-}
-</script>
-
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fff9ed">
+<title>English4Kids — Mỗi ngày một bước tiến tiếng Anh</title>
+<meta name="description" content="English4Kids là hệ sinh thái học tiếng Anh vui, an toàn cho trẻ em với English Voca, SpeakFlow và Speaking Test."><meta name="robots" content="index, follow"><link rel="canonical" href="https://english4kids.org/"><link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:site_name" content="English4Kids"><meta property="og:title" content="English4Kids — Mỗi ngày một bước tiến tiếng Anh"><meta property="og:description" content="Ba hành trình học tập: mở rộng từ vựng, luyện nói tự tin và kiểm tra kỹ năng nói."><meta property="og:url" content="https://english4kids.org/"><meta property="og:locale" content="vi_VN">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="English4Kids — Mỗi ngày một bước tiến tiếng Anh"><meta name="twitter:description" content="English Voca, SpeakFlow và Speaking Test dành cho trẻ em.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Các sản phẩm English4Kids","itemListElement":[{"@type":"ListItem","position":1,"name":"English Voca","url":"https://voca.english4kids.org/"},{"@type":"ListItem","position":2,"name":"SpeakFlow","url":"https://speak.english4kids.org/"},{"@type":"ListItem","position":3,"name":"Speaking Test","url":"https://speakingtest.english4kids.org/"}]}</script>
 <style>
-  :root{
-    --blue:#3b5bfd;
-    --green:#22c55e;
-    --bg:#fffdf7;
-    --text:#2a2a2a;
-    --muted:#666;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    background:var(--bg);
-    color:var(--text);
-    line-height:1.6;
-  }
-  header{
-    text-align:center;
-    padding:56px 20px 40px;
-  }
-  header .logo{
-    font-size:40px;
-  }
-  header h1{
-    font-size:2rem;
-    margin:12px 0 8px;
-  }
-  header p{
-    color:var(--muted);
-    max-width:560px;
-    margin:0 auto;
-    font-size:1.05rem;
-  }
-  main{
-    max-width:900px;
-    margin:0 auto;
-    padding:0 20px 60px;
-  }
-  .products{
-    display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
-    margin-top:20px;
-  }
-  @media(min-width:700px){
-    .products{grid-template-columns:1fr 1fr;}
-  }
-  .card{
-    background:#fff;
-    border:1px solid #eee;
-    border-radius:16px;
-    padding:28px;
-    text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.04);
-  }
-  .card .icon{font-size:36px;}
-  .card h2{margin:10px 0 6px;font-size:1.3rem;}
-  .card p{color:var(--muted);font-size:.98rem;min-height:66px;}
-  .btn{
-    display:inline-block;
-    margin-top:10px;
-    padding:10px 24px;
-    border-radius:30px;
-    color:#fff;
-    text-decoration:none;
-    font-weight:600;
-  }
-  .btn-voca{background:var(--blue);}
-  .btn-speak{background:var(--green);}
-  section.about{
-    margin-top:60px;
-    text-align:center;
-  }
-  section.about h2{font-size:1.4rem;}
-  section.about p{max-width:640px;margin:10px auto;color:var(--muted);}
-  footer{
-    text-align:center;
-    padding:30px 20px;
-    color:var(--muted);
-    font-size:.9rem;
-    border-top:1px solid #eee;
-  }
-  footer a{color:var(--muted);margin:0 8px;text-decoration:none;}
-  footer a:hover{text-decoration:underline;}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="logo">🎓</div>
-  <h1>English4Kids</h1>
-  <p>Học tiếng Anh vui và dễ dàng dành cho trẻ em, qua flashcard, quiz và luyện nói mỗi ngày.</p>
-</header>
-
-<main>
-  <div class="products">
-    <div class="card">
-      <div class="icon">🃏</div>
-      <h2>English Voca</h2>
-      <p>Học từ vựng tiếng Anh theo chủ đề với flashcard tương tác, quiz trắc nghiệm, Glory Points và bảng xếp hạng.</p>
-      <a class="btn btn-voca" href="https://voca.english4kids.org/">Vào English Voca</a>
-    </div>
-    <div class="card">
-      <div class="icon">🗣️</div>
-      <h2>SpeakFlow</h2>
-      <p>Luyện nói tiếng Anh từng câu một, giúp trẻ tự tin phát âm và giao tiếp mỗi ngày.</p>
-      <a class="btn btn-speak" href="https://speak.english4kids.org/">Vào SpeakFlow</a>
-    </div>
-  </div>
-
-  <section class="about">
-    <h2>Về English4Kids</h2>
-    <p>English4Kids là tổ chức xây dựng các ứng dụng học tiếng Anh đơn giản, dễ dùng và miễn phí cho trẻ em. Mục tiêu của chúng tôi là giúp các em học từ vựng và luyện nói mỗi ngày một cách vui vẻ, không áp lực.</p>
-    <p>Hai sản phẩm chính hiện có: <strong>English Voca</strong> để học từ vựng, và <strong>SpeakFlow</strong> để luyện nói.</p>
-  </section>
-</main>
-
-<footer>
-  <div>
-    <a href="privacy.html">Chính sách bảo mật</a>
-    <a href="terms.html">Điều khoản sử dụng</a>
-    <a href="mailto:congtrinh097@gmail.com">Liên hệ</a>
-  </div>
-  <p>© 2026 English4Kids. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
+:root{--ink:#202047;--muted:#62627d;--paper:#fff9ed;--purple:#5844d6;--purple2:#4130b6;--yellow:#ffd166;--green:#168a68;--coral:#ed6a5a;--line:#2020471f;--shadow:0 18px 45px #43318e1f;--page:1180px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(circle at 5% 9%,#ffd16638,transparent 24rem),radial-gradient(circle at 95% 30%,#5844d617,transparent 28rem),var(--paper);font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}a{color:inherit}.shell{width:min(calc(100% - 40px),var(--page));margin:auto}.skip-link{position:fixed;top:12px;left:12px;z-index:9;padding:10px 16px;border-radius:10px;background:var(--ink);color:#fff;transform:translateY(-160%)}.skip-link:focus{transform:none}:focus-visible{outline:4px solid var(--yellow);outline-offset:4px}.site-header{padding:22px 0}.nav,.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none;font-weight:900;font-size:1.08rem}.mark{display:grid;place-items:center;width:44px;height:44px;border-radius:15px;background:var(--purple);color:#fff;box-shadow:0 7px 0 #4130b62e;transform:rotate(-3deg);font-size:1.5rem}.nav-links{display:flex;gap:8px}.nav-links a{padding:9px 13px;border-radius:99px;color:var(--muted);font-weight:700;text-decoration:none}.nav-links a:hover{color:var(--purple2);background:#ece8ff}.hero{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:clamp(30px,6vw,82px);min-height:590px;padding:52px 0 76px}.eyebrow{display:inline-flex;align-items:center;gap:8px;margin:0 0 18px;padding:7px 12px;border:1px solid #5844d62b;border-radius:99px;background:#ffffffb8;color:var(--purple2);font-size:.82rem;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.eyebrow:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 5px #ffe2dd}h1,h2,h3,p{margin-top:0}h1{margin-bottom:22px;font-size:clamp(3rem,7vw,5.8rem);line-height:.98;letter-spacing:-.065em}.marker{position:relative;display:inline-block;color:var(--purple)}.marker:after{content:"";position:absolute;left:2%;right:-2%;bottom:-.07em;z-index:-1;height:.22em;border-radius:50%;background:var(--yellow);transform:rotate(-1.4deg)}.hero-copy>p{max-width:620px;margin-bottom:30px;color:var(--muted);font-size:clamp(1.05rem,2vw,1.22rem)}.actions{display:flex;flex-wrap:wrap;gap:14px}.button{display:inline-flex;align-items:center;justify-content:center;min-height:51px;padding:12px 21px;border-radius:16px;font-weight:900;text-decoration:none}.primary{color:#fff;background:var(--purple);box-shadow:0 7px 0 var(--purple2)}.primary:hover{transform:translateY(-2px)}.secondary{color:var(--purple2);background:#fff;border:1px solid var(--line)}.trust{margin-top:28px;color:var(--muted);font-size:.92rem;font-weight:700}.hero-art{position:relative;min-height:460px}.blob{position:absolute;inset:28px 10px 10px 32px;overflow:hidden;border:2px solid #20204714;border-radius:48% 52% 41% 59%/54% 41% 59% 46%;background:#ece8ff;box-shadow:var(--shadow)}.blob:before,.blob:after{content:"";position:absolute;border-radius:50%}.blob:before{width:230px;height:230px;right:-70px;top:-50px;background:var(--yellow)}.blob:after{width:180px;height:180px;left:-60px;bottom:-65px;background:#c8f0dd}.kid{position:absolute;left:50%;bottom:24px;z-index:2;width:min(78%,330px);transform:translateX(-50%)}.word{position:absolute;z-index:4;padding:10px 15px;border:2px solid var(--ink);border-radius:14px;background:#fff;box-shadow:5px 5px 0 var(--ink);font-weight:900}.w1{top:20px;right:3px;transform:rotate(5deg);color:var(--coral)}.w2{left:1px;bottom:82px;transform:rotate(-6deg);color:var(--green)}
+.section{padding:74px 0 92px}.heading{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:32px}.heading h2{max-width:620px;margin:0;font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.07;letter-spacing:-.045em}.heading p{max-width:380px;margin:0;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.product-card{--accent:var(--purple);--soft:#ece8ff;display:flex;flex-direction:column;min-height:430px;padding:24px;border:1px solid var(--line);border-radius:24px;background:#ffffffe8;box-shadow:0 10px 28px #34286812;transition:.22s}.product-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.product-card.speak{--accent:var(--green);--soft:#dff8ed}.product-card.test{--accent:var(--coral);--soft:#ffe2dd}.product-top{display:flex;align-items:center;justify-content:space-between}.icon{display:grid;place-items:center;width:64px;height:64px;border-radius:20px;background:var(--soft);color:var(--accent);font-size:2rem}.badge{padding:5px 10px;border-radius:99px;background:#fff1bd;color:#715000;font-size:.75rem;font-weight:900;text-transform:uppercase}.product-card h3{margin:27px 0 10px;font-size:1.65rem}.product-card>p{color:var(--muted)}.features{display:grid;gap:9px;margin:4px 0 25px;padding:0;list-style:none;font-size:.92rem;font-weight:700}.features li{display:flex;align-items:center;gap:9px}.features li:before{content:"✓";display:grid;place-items:center;width:21px;height:21px;border-radius:50%;color:var(--accent);background:var(--soft);font-size:.76rem}.product-link{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding:13px 15px;border-radius:14px;color:var(--accent);background:var(--soft);font-weight:900;text-decoration:none}.product-link:hover{color:#fff;background:var(--accent)}.path{padding:24px 0 104px}.panel{display:grid;grid-template-columns:.8fr 1.2fr;gap:54px;align-items:center;padding:clamp(28px,6vw,65px);border-radius:36px;color:#fff;background:var(--ink);box-shadow:0 14px 0 #2020471f}.panel h2{margin-bottom:13px;font-size:clamp(2rem,4vw,3.25rem);line-height:1.08;letter-spacing:-.04em}.panel p{color:#d8d8e9}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.step{min-height:165px;padding:20px;border:1px solid #ffffff21;border-radius:19px;background:#ffffff12}.num{display:grid;place-items:center;width:35px;height:35px;margin-bottom:20px;border-radius:11px;color:var(--ink);background:var(--yellow);font-weight:900}.step strong{display:block}.step span:last-child{color:#bdbdd3;font-size:.87rem}.about{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,7vw,88px);align-items:center;padding:28px 0 105px}.tiles{display:grid;grid-template-columns:1fr 1fr;gap:15px}.tile{display:flex;flex-direction:column;justify-content:space-between;min-height:175px;padding:22px;border-radius:24px;font-size:2rem}.tile span{font-size:1rem;font-weight:900}.tile:nth-child(1){background:#fff1bd;transform:rotate(-2deg)}.tile:nth-child(2){margin-top:31px;background:#dfefff;transform:rotate(2deg)}.tile:nth-child(3){background:#dff8ed;transform:rotate(1deg)}.tile:nth-child(4){margin-top:31px;background:#ffe2dd;transform:rotate(-1deg)}.about h2{font-size:clamp(2.1rem,4vw,3.4rem);line-height:1.08;letter-spacing:-.045em}.about-copy>p{color:var(--muted);font-size:1.05rem}footer{border-top:1px solid var(--line);background:#ffffff80}.footer-inner{padding:32px 0}.footer-links{display:flex;flex-wrap:wrap;gap:8px 20px}.footer-links a{color:var(--muted);font-size:.9rem;font-weight:700;text-decoration:none}.copyright{margin:0;color:var(--muted);font-size:.88rem}@media(max-width:940px){.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{text-align:center}.hero-copy>p{margin-inline:auto}.actions{justify-content:center}.hero-art{width:min(100%,560px);margin:auto}.products{grid-template-columns:1fr 1fr}.product-card.test{grid-column:1/-1;min-height:360px}.panel{grid-template-columns:1fr}}@media(max-width:680px){.shell{width:min(calc(100% - 28px),var(--page))}.nav-links a:not(:last-child){display:none}h1{font-size:clamp(2.85rem,15vw,4.5rem)}.hero{padding:35px 0 48px}.hero-art{min-height:390px}.heading{display:block}.heading h2{margin-bottom:14px}.products{grid-template-columns:1fr}.product-card.test{grid-column:auto;min-height:430px}.steps{grid-template-columns:1fr}.step{min-height:auto}.about{grid-template-columns:1fr}.footer-inner{align-items:flex-start;flex-direction:column}}@media(max-width:420px){.actions a{width:100%}.word{font-size:.8rem}.hero-art{min-height:350px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+</style></head><body>
+<a class="skip-link" href="#main-content">Bỏ qua đến nội dung chính</a>
+<header class="site-header"><nav class="nav shell" aria-label="Điều hướng chính"><a class="brand" href="/" aria-label="English4Kids — Trang chủ"><span class="mark" aria-hidden="true">★</span>English4Kids</a><div class="nav-links"><a href="#san-pham">Sản phẩm</a><a href="#hanh-trinh">Hành trình</a><a href="#ve-chung-toi">Về chúng tôi</a></div></nav></header>
+<main id="main-content"><section class="hero shell" aria-labelledby="hero-title"><div class="hero-copy"><p class="eyebrow">Hệ sinh thái học tiếng Anh cho trẻ</p><h1 id="hero-title">Học vui mỗi ngày.<br><span class="marker">Tự tin lớn lên.</span></h1><p>Từ những từ vựng đầu tiên đến một bài nói trọn vẹn — English4Kids giúp trẻ học đúng nhịp, thực hành thật nhiều và nhìn thấy tiến bộ của mình.</p><div class="actions"><a class="button primary" href="#san-pham">Khám phá 3 ứng dụng ↓</a><a class="button secondary" href="#hanh-trinh">Xem hành trình học</a></div><p class="trust">✓ Miễn phí · Dễ sử dụng · Không quảng cáo trên trang chủ</p></div><div class="hero-art" aria-hidden="true"><div class="blob"><svg class="kid" viewBox="0 0 360 390"><ellipse cx="180" cy="357" rx="138" ry="22" fill="#d9d1ff"/><path d="M91 343c7-69 29-113 89-113s82 44 89 113H91Z" fill="#5844d6"/><path d="M122 278c-25 11-42 30-54 60M238 278c25 11 42 30 54 60" stroke="#ed6a5a" stroke-width="24" stroke-linecap="round"/><path d="M102 157c0-62 34-107 81-107 52 0 87 41 87 107v34c0 54-35 91-85 91-49 0-83-38-83-91v-34Z" fill="#f4b38c"/><path d="M103 163c-7-29-2-79 20-103 18-20 45-31 74-26 48 9 75 47 73 116-19-8-36-20-48-36-22 29-61 47-119 49Z" fill="#202047"/><circle cx="145" cy="177" r="7" fill="#202047"/><circle cx="220" cy="177" r="7" fill="#202047"/><path d="M159 214c15 11 31 11 46 0" stroke="#a44343" stroke-width="6" stroke-linecap="round"/><rect x="111" y="291" width="138" height="93" rx="13" fill="#fff" stroke="#202047" stroke-width="5" transform="rotate(-2 111 291)"/><path d="m157 320 46-2-22 19-24-17Z" fill="#ffd166"/></svg></div><div class="word w1">Hello! 👋</div><div class="word w2">Great job! ★</div></div></section>
+<section class="section shell" id="san-pham" aria-labelledby="products-title"><div class="heading"><h2 id="products-title">Ba cách học,<br>một hành trình tiến bộ</h2><p>Mỗi ứng dụng tập trung vào một kỹ năng, để trẻ dễ bắt đầu và phụ huynh dễ chọn đúng nhu cầu.</p></div><div class="products">
+<article class="product-card voca"><div class="product-top"><div class="icon" aria-hidden="true">🃏</div></div><h3>English Voca</h3><p>Xây nền từ vựng vững chắc qua hình ảnh, trò chơi và những thử thách vừa sức.</p><ul class="features"><li>Flashcard theo chủ đề</li><li>Quiz tương tác</li><li>Điểm thưởng tạo động lực</li></ul><a class="product-link" href="https://voca.english4kids.org/">Khám phá từ vựng <span aria-hidden="true">→</span></a></article>
+<article class="product-card speak"><div class="product-top"><div class="icon" aria-hidden="true">🎙️</div></div><h3>SpeakFlow</h3><p>Luyện từng câu ngắn, nghe lại giọng nói và từng bước giao tiếp tự nhiên hơn.</p><ul class="features"><li>Luyện nói từng câu</li><li>Thực hành theo nhịp riêng</li><li>Xây sự tự tin mỗi ngày</li></ul><a class="product-link" href="https://speak.english4kids.org/">Bắt đầu luyện nói <span aria-hidden="true">→</span></a></article>
+<article class="product-card test"><div class="product-top"><div class="icon" aria-hidden="true">✓</div><span class="badge">Mới</span></div><h3>Speaking Test</h3><p>Kiểm tra kỹ năng nói trong một trải nghiệm rõ ràng, giúp nhận biết điểm mạnh và hướng cải thiện.</p><ul class="features"><li>Bài kiểm tra dễ bắt đầu</li><li>Đánh giá kỹ năng nói</li><li>Kết quả trực quan</li></ul><a class="product-link" href="https://speakingtest.english4kids.org/">Thử Speaking Test <span aria-hidden="true">→</span></a></article>
+</div></section>
+<section class="path shell" id="hanh-trinh" aria-labelledby="path-title"><div class="panel"><div><p class="eyebrow">Vòng tròn tiến bộ</p><h2 id="path-title">Biết từ mới.<br>Nói thành câu.<br>Hiểu mình tiến bộ.</h2><p>Không cần học mọi thứ cùng lúc. Trẻ có thể bắt đầu ở bất kỳ bước nào phù hợp nhất.</p></div><div class="steps"><div class="step"><span class="num">1</span><strong>Khám phá</strong><span>Ghi nhớ từ vựng qua hình ảnh và trò chơi.</span></div><div class="step"><span class="num">2</span><strong>Thực hành</strong><span>Dùng từ mới trong những câu nói gần gũi.</span></div><div class="step"><span class="num">3</span><strong>Kiểm tra</strong><span>Nhìn lại kỹ năng và chọn bước học tiếp theo.</span></div></div></div></section>
+<section class="about shell" id="ve-chung-toi" aria-labelledby="about-title"><div class="tiles" aria-hidden="true"><div class="tile">✓<span>Dễ bắt đầu</span></div><div class="tile">♡<span>Học vui vẻ</span></div><div class="tile">♢<span>An toàn</span></div><div class="tile">↗<span>Tiến bộ rõ ràng</span></div></div><div class="about-copy"><p class="eyebrow">Về English4Kids</p><h2 id="about-title">Công nghệ tốt nên làm việc học nhẹ nhàng hơn.</h2><p>English4Kids xây dựng các ứng dụng học tiếng Anh đơn giản, miễn phí và thân thiện với trẻ em. Chúng tôi tập trung vào trải nghiệm rõ ràng để trẻ chủ động học và phụ huynh dễ đồng hành.</p><p>Mỗi sản phẩm hoạt động độc lập, nhưng cùng chia sẻ một mục tiêu: giúp trẻ luyện tập đều đặn mà không cảm thấy áp lực.</p></div></section></main>
+<footer><div class="footer-inner shell"><a class="brand" href="/"><span class="mark" aria-hidden="true">★</span>English4Kids</a><div class="footer-links"><a href="privacy.html">Chính sách bảo mật</a><a href="terms.html">Điều khoản sử dụng</a><a href="mailto:congtrinh097@gmail.com">Liên hệ</a></div><p class="copyright">© 2026 English4Kids</p></div></footer></body></html>
