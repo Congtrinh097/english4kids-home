@@ -25,3 +25,6 @@ Primary navigation anchors to Products, Learning journey, and About. Product ord
 
 ## Responsive behavior
 Desktop uses a split hero and three cards. Tablet stacks the hero and uses two card columns, with Speaking Test spanning the row. Mobile uses a single column, compact navigation, and no horizontal overflow.
+
+## Speaking Test acquisition pages — 2026-09-17
+The approved marketing plan adds a dedicated all-age speaking-test introduction and two practice articles without changing the homepage's three-product hierarchy. These routes use the same normative palette and font stack, implemented in `speaking.css` CSS variables. Their signature is a coral-topped speaking prompt sheet; the CTA is the ink-colored button. They collect no personal data and install no analytics tracker. Each page uses semantic headings, visible focus, responsive single-column layouts and honest descriptions of assessment limits. The homepage links to the new introduction for discoverability.
